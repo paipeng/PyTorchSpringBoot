@@ -26,11 +26,10 @@ configurations.all {
 }
 
 dependencies {
+    implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.30'
+    implementation(group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3')
+    implementation 'ch.qos.logback:logback-classic:1.2.3'
 
-    //implementation group: 'org.slf4j', name: 'slf4j-api', version: '1.7.22'
-    //implementation group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.22'
-    //implementation(group: 'ch.qos.logback', name: 'logback-core', version: '1.2.3')
-    //implementation 'ch.qos.logback:logback-classic:1.2.3'
 
 
     implementation 'org.springframework.boot:spring-boot-starter'
